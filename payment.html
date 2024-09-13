@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #00c6ff, #00ff04)
+        }
+
+        .form-container {
+            text-align: center;
+             background: rgba(0, 255, 166, 0.35);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            width: 800%;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+             background: rgba(0, 255, 166, 0.35);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+             background: rgba(0, 255, 166, 0.761);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Payment Form</h2>
+        <form action="https://paystack.com/pay/7fl1exywni" method="GET" target="_blank">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Last Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <button type="submit">Make Payment</button>
+        </form>
+    </div>
+</body>
+
+</html>

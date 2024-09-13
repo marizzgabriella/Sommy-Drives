@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00c6ff, #00ff04); /* Linear gradient background */
+    color: #ffffff; /* Text color */
+    padding: 20px;
+}
+
+/* Header and Main Titles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Section Styling */
+.overlay-container {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Transparent background for title sections */
+    border-radius: 10px;
+}
+
+/* Overview and Price Sections */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.price-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for pricing */
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.price-container h2,
+.price-container h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 6%;
+}
+
+.image-gallery img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.image-gallery img,
+.image-gallery video {
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image-gallery img:hover,
+.image-gallery video:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Button Styling */
+.form-action {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+button {
+    background: rgba(0, 255, 166, 0.35);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: rgba(0, 255, 166, 0.761);
+}
+
+/* Additional Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+        padding: 9px 6%;
+    }
+    
+    .image-gallery img {
+        width: 100px; /* Adjust size as needed */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+
+    button {
+        width: 80%;
+        padding: 12px;
+    }
+}
